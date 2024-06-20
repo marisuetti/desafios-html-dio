@@ -1,0 +1,328 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* menu principal  --------------------------------------------------*/
+.img-principal {
+    background: url("https://odontologia.faculdadesoberana.com.br/wp-content/uploads/sites/19/2022/12/imagem-capa-o-que-faz-um-dentista-faculdade-soberana-odontologia-1600px.jpg") ;
+    margin: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header nav {
+    background-color: rgb(255, 255, 255) ;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+}
+
+.boka-chan {
+    color: rgb(31, 154, 162);
+}
+
+.logo {
+    padding: 8px;
+    margin: 10px;
+    position: relative;
+    float: left;
+    background-color: aliceblue;
+    border-radius:12px;
+    color: rgb(4, 82, 119);
+    font-family: 'Gill Sans MT';
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.menu li  {
+    padding: 8px;
+    margin: 15px;
+
+    display: inline-block;
+}
+
+.menu {
+    height: 70px;
+    color: rgb(14, 57, 87);
+    font-family: Poppins ;
+    font-size: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.menu li > a {
+    color: rgb(14, 57, 87);
+    text-decoration: none;
+    transition: all 0.8s ease;
+}
+
+.menu li > a:hover {
+    color: rgb(53, 182, 192);
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* responsividade  ----------------------------------------------------------*/
+@media screen and (max-width: 699px) {
+    .img-principal {
+        height: 40vh;
+        background-size: cover;
+    }
+
+    .menu {
+        margin: 0px;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .menu li {
+        margin: 0px;
+        margin-top: 15px;
+        margin-right: 10px;
+        font-size: 10px;
+    }
+
+    .logo {
+        padding: 13px;
+        font-size: 15px;
+    }
+
+    .text-title {
+        padding: 10px;
+        color: rgb(31, 154, 162);
+        font-family: 'Gill Sans MT';
+        font-size: 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principal-contact {
+        font-size: 10px;
+    }
+
+    #enviar, #reset {
+        padding: 5px;
+    }
+
+    iframe {
+        width: 150px;
+        height: 100px;
+    }
+
+    .contact-list {
+        color: rgb(14, 57, 87);
+        font-family: Poppins ;
+        font-size: 12px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 699px) {
+    .img-principal {
+        height: 40vh;
+        background-size: cover;
+    }
+
+    .menu {
+        margin: 0px;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .menu li {
+        margin: 0px;
+        margin-top: 15px;
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    .logo {
+        padding: 13px;
+        font-size: 18px;
+    }
+
+    .text-title {
+        padding: 10px;
+        color: rgb(31, 154, 162);
+        font-family: 'Gill Sans MT';
+        font-size: 10px;
+    }
+
+    .contact-list {
+        color: rgb(14, 57, 87);
+        font-family: Poppins ;
+        font-size: 12px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .principal-contact {
+        font-size: 10px;
+
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .contact {
+        border-radius: 15px;
+    }
+
+    form {
+        border-radius: 15px;
+    }
+
+    #enviar, #reset {
+        padding: 10px;
+    }
+
+    iframe {
+        width: 200px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .img-principal {
+        height: 50vh;
+        background-size: cover;
+    }
+
+    .menu li {
+        font-size: 15px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .text-title {
+        font-size: 20px;
+    }
+
+    .contact-list {
+        font-size: 15px;
+    }
+
+    .principal-contact {
+        font-size: 15px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .contact {
+        font-size: 15px;
+        border-radius: 20px;
+    }
+
+    form {
+        border-radius: 20px;
+    }
+
+    iframe {
+        width: 350px;
+        height: 150px;
+    }
+}
+
+/* texto principal  ----------------------------------------------------------*/
+
+.text-title {
+    padding: 10px;
+    color: rgb(31, 154, 162);
+    font-family: 'Gill Sans MT';
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+/* footer ---------------------------------------------------------------------*/
+.footer {
+    margin-top: 10px;
+    background-color: rgb(204, 231, 236);
+}
+
+.title-footer {
+    padding: 10px;
+    font-family: 'Gill Sans MT';
+    color: rgb(31, 154, 162);
+    text-align: center;
+}
+
+.contact-list li {
+    padding: 8px;
+    margin: 10px;
+    list-style: none;
+}
+
+.contact-list {
+    color: rgb(14, 57, 87);
+    font-family: Poppins ;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-list li > a {
+    color: rgb(14, 57, 87);
+}
+
+.principal-contact {
+    background-color: aliceblue;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.contact {
+    font-family: Poppins;
+    padding: 15px;
+    background-color: white;
+}
+
+.contact li, a {
+    color: rgb(14, 57, 87);
+}
+
+.contact li {
+    list-style: none;
+    padding: 5px;
+}
+
+form {
+    font-family: Poppins;
+    background-color: white;
+    padding: 15px;
+    color: rgb(14, 57, 87);
+
+    display: flex;
+    flex-direction: column;
+}
+
+#enviar, #reset {
+    background-color: rgb(224, 236, 240);
+    border-radius: 3px;
+    border-color: rgb(31, 154, 162);
+    font-family: Poppins;
+
+    display: flex;
+}
+
+#enviar:hover, #reset:hover {
+    color: rgb(31, 154, 162);
+}
