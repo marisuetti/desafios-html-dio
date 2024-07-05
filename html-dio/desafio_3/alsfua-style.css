@@ -1,0 +1,335 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+iframe {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.synopsis-div, .characters-div, .chapters-div {
+    padding: 20px 0 20px 0;
+}
+
+ul {
+    list-style: none; 
+    padding-left: 5px; 
+}
+
+.statistics-tables {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+table {
+    padding: 5px;
+    border: 1px solid rgb(80, 177, 72);
+    border-collapse: collapse;
+}
+
+table, tr {width: 350px;}
+table tr th, td {width: 200px;}
+tr, td {padding: 5px;}
+
+tbody tr th, td {
+    padding: 8px;
+    font-size: 13px;
+}
+
+thead th{
+    background-color: rgb(80, 177, 72);
+    color: white;
+}
+
+.image td {
+    background-image: url(https://cdn.myanimelist.net/images/manga/2/267877l.jpg);
+    alt: "imagem capa do manhwa com os personagens olhando entre si, num fundo de galáxia e estrelas. eles estão segurando uma maçã verde flutuante";
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+.image thead {font-size: 20px;}
+.image thead th {padding: 10px;}
+
+.links tbody th{
+    text-align: left;
+    padding-left: 20px;
+}
+.links thead th {padding: 8px;}
+
+.statistics tbody th{
+    text-align: left;
+    padding-left: 20px;
+}
+.statistics thead th {padding: 8px;}
+
+.summary li {margin: 7px;}
+.summary ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+a { 
+    color:rgb(19, 168, 6); 
+    text-decoration: none;
+    transition: all 0.8s ease;
+}
+
+a:hover {
+    color: rgb(201, 19, 110);
+    text-decoration: underline;
+}
+
+a.home-page {
+    color: rgb(147, 111, 111);
+    text-decoration: none;
+}
+
+p {font-size: 18px;}
+
+h4 {
+    font-weight: normal;
+    margin: 0px;
+}
+
+h2 {margin-bottom: 2px;}
+
+h3.list-title {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+    background-color: rgb(80, 177, 72);
+    margin: 0px;
+    padding: 10px;
+}
+
+.logo {margin: 15px;}
+
+.bar {
+    background-color: #f5dfd3;
+    padding:15px;
+    width: auto;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+/* Para celular */
+@media only screen and (max-width: 830px) {
+    div.anchors {
+        display: none;
+    }
+
+    .content {
+        max-width: 1440px;
+        margin: 0 10px 0 10px;
+        grid-gap: 1rem;
+
+        display: grid;
+        gap: 1rem;
+        grid-template-areas: "main";
+        grid-template-columns: minmax(0,auto);
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    figure img {width: 300px;}
+
+    .characters img {
+        width: 170px;
+    }
+
+    .sidebar ul {
+        text-align: center;
+        list-style-type: disc;
+        list-style-position: inside;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar li {
+        margin: 5px;
+    }
+
+    .sidebar h2 {
+        text-align: center;
+    }
+}
+
+/* Para tablets */
+@media only screen and (min-width: 830px) and (max-width: 1370px) {
+    div.anchors {
+        display: none;
+    }
+
+    .content {
+        max-width: 1440px;
+        margin: auto;
+        grid-gap: 3rem;
+
+        display: grid;
+        gap: 3rem;
+        grid-template-areas: "sidebar main";
+        grid-template-columns: minmax(0,10rem) minmax(0,2.5fr);
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    figure img {width: 300px;}
+
+    .sidebar {border-right: solid 1px #cdcdcd;}
+    .sidebar li {margin: 5px;}
+    .sidebar hr {display: none;}
+
+    .principal-main {
+        padding: 20px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .first-impressions {
+        padding-right: 10px;
+    }
+
+    .statistics-tables table{
+        width: 200px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1370px) {
+    div.summary, .navigation-title {
+        display: none;
+    }
+
+    .content {
+        max-width: 1440px;
+        margin: auto;
+        grid-gap: 3rem;
+        display: grid;
+        gap: 3rem;
+        grid-template-areas: "sidebar main anchors";
+        grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    figure img {width: 350px;}
+
+    .sidebar {border-right: solid 1px #cdcdcd;}
+    .sidebar li {padding: 5px 0 5px 0;}
+    .sidebar ul {padding: 0;}
+    .sidebar hr {display: none;}
+
+    .principal-main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .first-impressions {
+        padding-right: 10px;
+    }
+}
+
+.summary {
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    border-radius: 10px;
+}
+
+.synopsis-div p {
+    color: rgb(95, 94, 94);
+}
+
+img.character-image {
+    float:left;
+    clear: left;
+    margin: 0 20px 20px 0;
+    border-radius: 20px;
+
+    display: block;
+}
+
+.others-characters-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.others-characters-div h3 {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.others-characters-div .character-image {
+    margin: 5px;
+}
+
+.characters {
+    margin: 0px 20px 20px 0px;
+    display: inline-block;
+}
+
+.episodes {
+    border: 5px solid rgb(80, 177, 72);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.episodes-lists {
+    height: 250px;
+    overflow: auto;
+    margin: 0px 0px 30px 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.episodes-lists  li{
+    font-size: 18px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+}
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+.anchors ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    padding: 5px 0 0 30px;
+    width: 300px;
+    height: 300px;
+}
+
+.anchors li {margin: 5px;}
+
+figure {
+    padding-top: 20px;
+    text-align: center;
+}
+
+
